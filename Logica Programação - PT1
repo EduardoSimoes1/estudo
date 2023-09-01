@@ -1,0 +1,71 @@
+void main() {
+  // Variaveis - 1
+  String variavelNome = "Eduardo";
+  print(variavelNome);
+  
+  int valorVariavel = 10;
+  print(valorVariavel);
+  
+  bool valorVerdadeiro = true;
+  print(valorVerdadeiro);
+  
+  List<String> listaDePalavras = ["Eduardo", "Simoes"];
+  print('${listaDePalavras[0]} - ${listaDePalavras[1]}');
+
+
+
+  // Null-safety - 2
+  String? nome;
+  nome = 'ABC';
+  print(nome);
+  nome = null;
+  
+  late String sobrenome;
+  sobrenome = 'Simoes';
+  print(sobrenome);
+  // sobrenome = null
+
+
+
+  // IF e SWITCH - 3
+  bool seguirEmFrente = true;
+  
+  if(seguirEmFrente) {
+    print('Andar');
+  } else {
+    print('Parar');
+  }
+  
+  if(10 > 5) {
+    print("10 é maior que 5");
+  }
+  
+  int valorInt = 10;
+    switch(valorInt){
+      case 0:
+        print('ZERO');
+        break;
+      case 1:
+        print('UM');
+        break;
+      case 2:
+        print('DOIS');
+        break;
+      default:
+        print('PADRAO');
+    }
+
+
+
+  Estrutura de Repetição - 4
+
+   for(int i =1; i <= 10; i++) {
+     print(i * 30);
+   }
+ 
+   int contador = 10;
+   while(contador != 1) {
+     contador = contador -1;
+      print('Loop -> $contador');
+   }
+  
